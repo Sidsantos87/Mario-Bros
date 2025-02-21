@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Liter&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="logo-header">
+        <img src="img/logo-header.png" alt="imagem da face do mario" class="logo-cabeca">
+        <a>Home</a>
+        <a>Fale Conosco</a>
+        <a>Nossos Serviços</a>
+    </div>
+    <div class="caixa-mae">
+
+        <div class="caixa principal">
+
+            <img src="img/logo.png" alt="logo mario bros" class="logo">
+            <p>Irmãos Mario e Luigi, seus encanadores para qualquer situação de emergência!</p>
+            <p>Encanadores competentes e disponíves de acordo com a sua necessidade e urgência. Competência e
+                confiabilidade na indetifificação do seu problema e, principalmente, na solução dele. Não basta ser um
+                profisional responsável e habilidoso, mas também, justo na hora de quantificar o serviço.</p>
+            <button onclick="mostrarform()">Entre em Contato</button>
+        </div>
+
+        <div class="imagem-mario-luigi">
+            <img src="img/mario.png" alt="imagem do mario com luigi" class="mario-luigi">
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="img/video.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="logo-zap">
+        <a href="https://wa.me/5571997428652?text=Ol%C3%A1,%20em%20que%20posso%20ajudar?">
+        <img src="img/whatsapp.png" alt="imagem do whatsapp" class="imagem-zap">
+    </a>
+    </div>
+    <div class="mascara"></div>
+
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/DsOUViBec9W" method="POST">
+        <input type="nome" id="nome" placeholder="Seu nome">
+        <input type="telefone" id="celular" placeholder="Seu telenofe">
+        <textarea placeholder="Digite sua dúvida aqui..." name="duvida"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+    <div class="mascara-formulario"  onclick="esconderform()"></div>
+
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
